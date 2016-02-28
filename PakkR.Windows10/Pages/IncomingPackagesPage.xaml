@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="PakkR.Windows10.Pages.IncomingPackagesPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PakkR.Windows10.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        
+        <!-- List of incoming packages -->
+        <ListView x:Name="IncomingPackagesListView"
+                  RelativePanel.AlignTopWithPanel="True"
+                  RelativePanel.AlignLeftWithPanel="True"
+                  RelativePanel.Above="IncomingPackagesCommandBar">
+            
+        </ListView>
+        <!-- Commands -->
+        <CommandBar x:Name="IncomingPackagesCommandBar"
+                    RelativePanel.AlignBottomWithPanel="True"
+                    RelativePanel.AlignLeftWithPanel="True"
+                    RelativePanel.AlignRightWithPanel="True"/>
+    </RelativePanel>
+</Page>
